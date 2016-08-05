@@ -1,0 +1,261 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #424046;
+}
+
+.text {
+  color: #FFFFFF;
+  background-color: rgba(75, 75, 75, 0.9);
+}
+
+.support.type, .support.class {
+  color: #FF8000;
+}
+
+.source.ruby.rails.embedded.html {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text.html.ruby {
+  color: #FFFFFF;
+  background-color: rgba(16, 16, 16, 0.9);
+}
+
+.source.ruby.embedded.haml {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text.haml {
+  background-color: rgba(47, 47, 47, 0.9);
+}
+
+.meta.tag.haml, .entity.name.tag.haml {
+  color: #FFFF00;
+}
+
+.entity.name.tag.class.haml, .entity.name.tag.id.haml {
+  color: #4380FE;
+}
+
+.constant.numeric.ruby {
+  color: #CCFF33;
+}
+
+.source.ruby {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.source {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.comment {
+  color: #9933CC;
+}
+
+.constant {
+  color: #339999;
+}
+
+.keyword {
+  color: #FF0049;
+}
+
+.keyword.preprocessor {
+  color: #EDF8F9;
+}
+
+.keyword.preprocessor .directive {
+  color: #FFFFFF;
+}
+
+.entity.name.function, .storage.type.function.js {
+  color: #FFFF00;
+}
+
+.variable.parameter {
+  font-style: italic;
+}
+
+.source .comment.block {
+  color: #772CB7;
+  background-color: #070707;
+}
+
+.variable.other {
+  color: #1558FF;
+}
+
+.support.function.activerecord.rails {
+  color: #999966;
+}
+
+.string {
+  color: #66FF00;
+}
+
+.string .constant.character.escape {
+  color: #AAAAAA;
+}
+
+.string.interpolated {
+  color: #000000;
+  background-color: #CCCC33;
+}
+
+.string.regexp {
+  color: #44B4CC;
+}
+
+.string.literal {
+  color: #CCCC33;
+}
+
+.string.interpolated .constant.character.escape {
+  color: #555555;
+}
+
+.entity.name.class, .support.class.js {
+  text-decoration: underline;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.entity.name.tag {
+}
+
+.meta.tag.inline.any.html, .meta.tag.block.any.html {
+  color: #FF6600;
+}
+
+.entity.other.attribute-name {
+  font-style: italic;
+  color: #99CC99;
+}
+
+.keyword.other {
+  color: #DDE93D;
+}
+
+.meta.selector.css, .entity.other.attribute-name.pseudo-class.css, .entity.name.tag.wildcard.css, .entity.other.attribute-name.id.css, .entity.other.attribute-name.class.css {
+  color: #FF6600;
+}
+
+.support.type.property-name.css {
+  color: #999966;
+}
+
+.keyword.other.unit.css, .constant.other.rgb-value.css, .constant.numeric.css {
+  color: #FFFFFF;
+}
+
+.support.function.event-handler.js {
+  color: #FFFFFF;
+}
+
+.keyword.operator.js {
+  color: #FFFFFF;
+}
+
+.keyword.control.js {
+  color: #CCCC66;
+}
+
+.support.class.prototype.js {
+  color: #FFFFFF;
+}
+
+.object.property.function.prototype.js {
+  color: #FF6600;
+}
+
+.markup.heading.textile {
+  color: #FFF639;
+}
+
+.entity.name.type.textile {
+  color: #0091A2;
+}
+
+.markup.list.unnumbered.textile {
+  color: #E5FF50;
+}
+
+.markup.list.numbered.textile {
+  color: #FFA14C;
+}
+
+.markup.bold.textile {
+  color: #FFB0A8;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.markup.italic.textile {
+  font-style: italic;
+}
+
+.entity.name.tag {
+  color: #EEFF36;
+}
+
+.markup.heading.markdown {
+  color: #F7FF1A;
+}
+
+.markup.list.numbered.markdown {
+  color: #FFA144;
+}
